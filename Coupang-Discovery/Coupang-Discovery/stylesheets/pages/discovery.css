@@ -1,0 +1,164 @@
+
+   body {
+    top: 100px;
+    bottom: 242px;
+    position: relative;
+    
+   }
+
+   #logo {
+    width:176px;
+    height:40px;
+    
+  }
+  
+
+  .title {
+    display: flex;
+    margin-bottom: 24px;
+     align-items: center;
+     
+  }
+
+
+
+.title>h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  
+}
+
+.title>h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 115%;
+}
+
+.title>h3,
+.title>.divider {
+  color: var(--color-gray-600);
+}
+
+.title>.divider {
+  margin: 0 10px;
+}
+
+
+.wrap {
+  width: 1020px;
+  margin: auto auto;
+  display: flex;
+  
+  
+}
+
+.coupang {
+  position: relative;
+   width: 1020px;
+   height: 1106px;
+   display: grid;
+   grid-template-columns:1fr ;
+   grid-template-rows:88px 1020px ;
+   grid-template-areas: 
+    "header"
+    "img";
+}
+
+.header {
+  position: absolute;
+  grid-area: header;
+  
+}
+
+.img {
+  position: absolute;
+  grid-area: img; 
+  
+}
+
+.item {
+   border: 1px solid var( --color-gray-500);
+   float: left;
+   position: relative;
+   
+   
+}
+
+.item.short {
+  width: 243px;
+  height: 310px;
+  padding: 14px 21px;
+}
+
+
+
+.item.long {
+  width: 502px;
+  height: 310px;
+  padding: 20px 28px;
+
+}
+
+
+
+.item:nth-child(3),
+.item:nth-child(4),
+.item:nth-child(5),
+.item:nth-child(6)  {
+  margin: 16px 0;
+}
+ 
+.item:nth-child(1),
+.item:nth-child(3),
+.item:nth-child(4),
+.item:nth-child(5),
+.item:nth-child(7),
+.item:nth-child(8) {
+  margin-right: 16px;
+}
+  
+
+
+
+.item:hover,
+.item:focus {
+  border: 1px solid var(--color-blue-600);
+}
+
+
+
+
+.item ::before {
+  content:">";
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 120%;
+  position: absolute;
+  border-radius: 7px;
+  color: var(--color-white);
+  background: var(--color-gray-600);
+  width: 42px;
+  height: 42px;
+  top: calc(50% - 42px/2 + 114px);
+  opacity: 0.3;
+  transition: all 0.7s;
+  transition-timing-function: ease-out;
+
+}
+
+
+
+.item:hover ::before {
+   content:"구매하기>";
+   background: var(--color-blue-600);
+  border-color: var(--color-blue-600);
+   width: 112px;
+   opacity: 1;
+   
+}
+
+
+
