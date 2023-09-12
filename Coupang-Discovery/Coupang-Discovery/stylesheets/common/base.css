@@ -1,0 +1,22 @@
+
+
+/* Base 스타일 작성 */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-style: normal;
+      font-size: 14px;
+       font-weight: 400;
+      line-height: 120%;      
+}
+
+
+
+
